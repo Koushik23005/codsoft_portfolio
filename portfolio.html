@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Koushik Dondeti's Portfolio</title>
+    <link rel="stylesheet" href="portfolio.css" />
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color:cornsilk;
+        }
+        header {
+            background-color:azure;
+            color:blueviolet;
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2em;
+        }
+        nav {
+            margin: 20px 0;
+            text-align: center;
+        }
+        nav a {
+            margin: 0 15px;
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+        .section {
+            padding: 40px 0;
+        }
+        .section h2 {
+            border-bottom: 2px solid crimson;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            color: crimson;
+            text-align: center;
+            font-size: 1.5em;
+        }
+        .about, .contact {
+            text-align: center;
+        }
+        .portfolio {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            align-items: center;
+        }
+        .portfolio-item {
+            max-width: 800px;
+            text-align: center;
+        }
+        .contact form {
+            max-width: 600px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+        }
+        .contact form input, .contact form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        .contact form button {
+            background-color:lightblue;
+            border: none;
+            color: black;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .contact form button:hover {
+            background-color: blue;
+        }
+        footer {
+            background-color:darkblue;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Koushik Dondeti</h1>
+        <p>BTech CSE-DS | Vignan University Guntur</p>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    <div class="container">
+        <section id="about" class="section about">
+            <h2>About Me</h2>
+            <div style="text-align: center;">
+                <img src="pic.jpeg" alt="Koushik Dondeti"
+                     style="width: 200px; height: 200px; object-fit: cover; border-radius: 60%;">
+            </div>
+            <p>Hello! I'm Koushik Dondeti, a third-year BTech CSE-DS student at Vignan University, Guntur. I'm passionate about learning new technologies and currently know some C language and front-end development. I'm aspiring to master MERN stack development and am committed to self-improvement. I am friendly, hardworking, and enjoy observing and learning new things. I'm currently working on a quiz app project called MindMaze and am looking forward to other exciting projects.</p>
+        </section>
+        <section id="portfolio" class="section portfolio">
+            <h2>My Projects</h2>
+            <div class="portfolio-item">
+                <p><strong>MindMaze:</strong> A quiz application designed to challenge and test your knowledge. It includes features like multiple-choice questions, scoring, and a user-friendly interface.</p>
+            </div>
+            <!-- Add more portfolio items here -->
+        </section>
+        <section id="contact" class="section contact">
+            <h2>Contact Me</h2>
+            <form action="mailto:meghanayerramsetty12@gmail.com" method="post" enctype="text/plain">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2024 Koushik Dondeti. All rights reserved.</p>
+    </footer>
+    <script src="portfolio.js"></script>
+</body>
+</html>

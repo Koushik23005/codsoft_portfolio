@@ -1,0 +1,41 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    color: black;
+}
+header {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+nav {
+    text-align: center;
+    margin-top: 20px;
+}
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: black;
+}
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+.section {
+    margin: 20px 0;
+    padding: 20px;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+footer {
+    text-align: center;
+    padding: 10px;
+    background:black;
+    color: white;
+    margin-top: 20px;
+}
